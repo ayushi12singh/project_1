@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="style1.css" type="text/css">
+  <link rel="stylesheet" href="animate.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+
+  <title>Coffee House</title>
+</head>
+
+<body>
+  <header class="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <div class="logo">
+            <img
+              src="https://dynamic.brandcrowd.com/preview/logodraft/687d29d5-0369-4927-b6a9-310068012eea/image/large.png"
+              alt="">
+          </div>
+        </div>
+        <div class="col-md-9 col-12">
+          <div id="slider-animation" class="carousel-slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#slider-animation" data-slide-to="0" class="active"></li>
+              <li data-target="#slider-animation" data-slide-to="1"></li>
+              <li data-target="#slider-animation" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://st2.depositphotos.com/4341251/6620/i/600/depositphotos_66205515-stock-photo-beautiful-flowers-background.jpg"
+                  alt="">
+                <div class="text-box">
+                  <h2 class="wow slideInRight" data-wow-duration="2s">This is Coffee House</h2>
+                  <p class="wow slideInLeft" data-wow-duration="2s">Decaffeinated coffee is like a hairless cat: it
+                    exists, but that doesn’t make it right. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-photo/cosmos-field-with-sunset_29084-2310.jpg?w=2000" alt="">
+                <div class="text-box">
+                  <h2 class="wow slideInUp" data-wow-duration="4s">This is Coffee House</h2>
+                  <p class="wow fadeInDown" data-wow-duration="4s">A mathematician is a device for turning coffee into
+                    theorems.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.mydomaine.com/thmb/F4pv69vvGJYH0MbwpOQsdFFpKJM=/735x0/cdn.cliqueinc.com__cache__posts__253245__most-beautiful-flowers-253245-1522430144413-main.700x0c-54d089becbe64976827e9ed0461e3f24.jpg"
+                  alt="">
+                <div class="text-box">
+                  <h2 class="wow slideInUp" data-wow-duration="4s">This is Coffee House</h2>
+                  <p class="wow fadeInUp" data-wow-duration="2s">Our culture runs on coffee and gasoline, the first
+                    often tasting like the second.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="sticky-header is-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Order Online</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Catering</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="photos">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.gannett-cdn.com/presto/2021/09/28/USAT/56a8b2da-de99-4373-86d2-fa38d0ebc833-National_Coffee_Day_2021_deals.jpg?crop=4779,2689,x0,y0&width=3200&height=1801&format=pjpg&auto=webp"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://previews.123rf.com/images/pavelrusak/pavelrusak1811/pavelrusak181100215/114410432-dishes-with-food-on-the-table-in-the-cafe.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/premium-photo/young-people-having-fun-toasting-red-wine-together-dinner-party-outdoor-villa_101731-1009.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/03/shutterstock_1038131128.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="abt">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="mx-auto" style="width: 700px;">
+            <h1>WE ARE COFFEE HOUSE</h1>
+            <p>At COFFEE HOUSE, we are dedicated to all things seasonal with a market-driven day-time menu that also
+              offers a variety of artisan breads and pastries made daily with locally-sourced, heirloom grains.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="card-wrap">
+            <div class="card border-0 shadow card--welcome is-show" id="welcome">
+              <div class="card-body">
+                <h2 class="card-title">WELCOME</h2>
+                <p>Stay in touch with us</p>
+                <div class="btn-wrap"><a class="btn btn-lg btn-register js-btn" data-target="register">REGISTER</a><a
+                    class="btn btn-lg btn-login js-btn" data-target="login">LOGIN</a></div>
+              </div>
+            </div>
+            <div class="card border-0 shadow card--register" id="register">
+              <div class="card-body">
+                <h2 class="card-title">Create Account</h2>
+                <p class="card-text">Enter your personal details<br />and start journey with us</p>
+                <p class="badge-wrap"><a class="badge"><i class="fab fa-facebook-f"></i></a><a class="badge"><i
+                      class="fab fa-google"></i></a><a class="badge"><i class="fab fa-twitter"></i></a><a
+                    class="badge"><i class="fab fa-github"></i></a></p>
+                <p>or use your email for registration</p>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Name" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password" required="required" />
+                  </div>
+                  <button class="btn btn-lg">REGISTER</button>
+                </form>
+              </div>
+              <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+            </div>
+            <div class="card border-0 shadow card--login" id="login">
+              <div class="card-body">
+                <h2 class="card-title">Welcome Back!</h2>
+                <p>To keep connected with us<br />please login with your personal info</p>
+                <p class="badge-wrap"><a class="badge"><i class="fab fa-facebook-f"></i></a><a class="badge"><i
+                      class="fab fa-google"></i></a><a class="badge"><i class="fab fa-twitter"></i></a><a
+                    class="badge"><i class="fab fa-github"></i></a></p>
+                <p>or use your account</p>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password" required="required" />
+                  </div>
+                  <p><a>Forgot your password?</a></p>
+                  <button class="btn btn-lg">LOGIN</button>
+                </form>
+              </div>
+              <button class="btn btn-back js-btn" data-target="welcome"><i class="fas fa-angle-left"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menuarea">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-12">
+          <img src="https://as1.ftcdn.net/v2/jpg/01/88/48/58/1000_F_188485806_OfcytqhqZZtC01uoulyOpWlXEC2pHveV.jpg"
+            alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <h2>CAFETERIA</h2>
+          <hr style="height:4px;color:red;">
+          <p>Currently open for dine in & take out.</p>
+          <hr style="height:4px;color:red;">
+          <div class="buttonarea">
+            <a href="#" class="btn" role="button" aria-pressed="true">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="event">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-9 col-12">
+          <img src="https://www.eventbrite.co.uk/blog/wp-content/uploads/2022/06/Event-Lighting-Guide.jpg" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <h1>catering + events</h1>
+          <p>Bring a little life excitement to your next event, whether you are looking to host at one of our locations
+            or take selections away to the party
+          </p>
+          <div class="buttonarea">
+            <a href="#" class="btn" role="button" aria-pressed="true">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bakery">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-9 col-12">
+          <img src="https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2022/03/Bakery.jpg" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <h1>OUR BAKEHOUSE</h1>
+          <p>Our team of talented bakers rises before the sun to prepare and deliver freshly baked breads and pastries
+            to our restaurants. Bring home a little piece of the magic with advanced bread + pastry orders for pickup!
+          </p>
+          <div class="buttonarea">
+            <a href="#" class="btn" role="button" aria-pressed="true">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dessert">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <img src="des1.gif" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="des2.gif" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="des3.gif" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="des4.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="drinks">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <img src="https://thumbs.gfycat.com/WearySadBrownbutterfly-max-1mb.gif" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="http://25.media.tumblr.com/43f9de15c300a8b68b4182adfa7bafe4/tumblr_mg7tlhUKR01s2ai5go1_500.gif"
+            alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="https://c.tenor.com/zVFp_3XsFngAAAAM/foodpanda-food.gif" alt="">
+        </div>
+        <div class="col-md-3 col-12">
+          <img src="https://i.pinimg.com/originals/42/9a/a2/429aa29398f718827b2620b220b1f8a4.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="special">
+    <div class="container">
+
+    </div>
+  </section>
+  <section class="savoury1">
+    <div class="container mt-40">
+      <h1 class="text-center">Our Speciality in Savoury Dishes</h1>
+      <div class="row mt-30">
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img
+              src="https://img.taste.com.au/ejZusTgr/w720-h480-cfill-q80/taste/2010/01/easy-oven-baked-fritatta-118948-2.jpg"
+              alt="">
+            <div class="box-content">
+              <h3 class="title">Easy oven-baked frittata</h3>
+              <span class="post">Baked</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img
+              src="https://img.taste.com.au/tERS-5ym/w720-h480-cfill-q80/taste/2016/11/bacon-and-cheese-muffins-98535-1.jpeg"
+              alt="">
+            <div class="box-content">
+              <h3 class="title">Bacon and cheese muffins</h3>
+              <span class="post">Baked</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img
+              src="https://img.taste.com.au/GkWopPHa/w720-h480-cfill-q80/taste/2016/11/spinach-feta-muffins-21991-1.jpeg"
+              alt="">
+            <div class="box-content">
+              <h3 class="title">Spinach & feta muffins</h3>
+              <span class="post">Baked</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="savoury2">
+    <div class="container mt-40">
+      <h1 class="text-center">Indian Dishes</h1>
+      <div class="row mt-30">
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img
+              src="https://cafedelites.com/wp-content/uploads/2015/10/Turkey-Sweet-Potato-and-Kale-Cannelloni-Cafe-Delites-16.jpg"
+              alt="">
+            <div class="box-content">
+              <h3 class="title">Turkey, Sweet Potato and Kale Cannelloni</h3>
+              <span class="post">Baked</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img src="https://cafedelites.com/wp-content/uploads/2015/10/Chicken-and-Pumpkin-Korma-Curry-1.jpg" alt="">
+            <div class="box-content">
+              <h3 class="title"> Chicken, Green Bean and Butternut Squash Curry</h3>
+              <span class="post">Pan served</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="box6">
+            <img src="https://cafedelites.com/wp-content/uploads/2015/07/Hash-Brown-Egg-Cups-12A.jpg" alt="">
+            <div class="box-content">
+              <h3 class="title"> Cauliflower Hash Brown Egg Cups</h3>
+              <span class="post">Baked</span>
+              <ul class="icon">
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-link"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                    <div class="logo-widget footer-widget">
+                        <figure class="logo-box"><a href="#"><img src="CoffeeHouse-logos_white.png" alt=""></a></figure>
+                        <div class="text">
+                            <p>At Coffee House,they continue their dedication to handmade food with artesian breads and pastries made daily with locally-sourced,hairloom grains,as well as produce forward day-time menu.</p>
+                        </div>
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
+                    <div class="service-widget footer-widget">
+                        <div class="footer-title">Services</div>
+                        <ul class="list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Order Online</a></li>
+                            <li><a href="#">Food Serving</a></li>
+                            <li><a href="#">Catering</a></li>
+                            <li><a href="#">View Menu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+                    <div class="contact-widget footer-widget">
+                        <div class="footer-title">Contacts</div>
+                        <div class="text">
+                          <h6>Address:</h6>
+                            <p>15.Bankim Chatterjee Street,Near Presidency College,College Street,Kolkata(Calcutta) India</p>
+                           
+                            <p>+2(784) 1223323</p>
+                            <h6>E-mail</h6>
+                            <p>coffeehouse@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- main-footer end -->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 column">
+                <div class="copyright"><a href="#">Coffee House</a> &copy; 2022. All Right Reserved</div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 column">
+                <ul class="footer-nav">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+<script>
+  $('.carousel').carousel({
+    interval: 2000
+  })
+</script>
+  <script src="projecct.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

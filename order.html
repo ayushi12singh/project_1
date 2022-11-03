@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style5.css" type="text/css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="logo">
+                        <img src="https://dynamic.brandcrowd.com/preview/logodraft/687d29d5-0369-4927-b6a9-310068012eea/image/large.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-md-9 col-12">
+                    <div class="headarea">
+                        <h1>ORDER ONLINE</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sticky-header is-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Order Online</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Catering</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cart-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="main-heading">Shopping Cart</div>
+                        <div class="table-cart">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="data:image/jpeg;base64,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"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Macro Bowl
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.300.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://thetortillachannel.com/wp-content/uploads/2018/08/Vegan-pide-bread-sandwich-10.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Turkish Sandwitch
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.250.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://truffle-assets.imgix.net/e01d2b53-1563_chickenparmsandwich_land1.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Chicken Parmesan Sandwich
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    $250.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tr>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Choose A Menu
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Popular Items</a>
+                                            <a class="dropdown-item" href="#">Pastry</a>
+                                            <a class="dropdown-item" href="#">Drinks</a>
+                                            <a class="dropdown-item" href="#">Bread</a>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <tr>
+                                    <td>
+                                        <div class="display-flex align-center">
+                                            <div class="img-product">
+                                                <img src="https://i0.wp.com/theletmeeatcake.com/wp-content/uploads/2018/01/Friends-and-Family-Sonora-Wheat-Croissants.png?resize=586%2C586&ssl=1"
+                                                    alt="" class="mCS_img_loaded">
+                                            </div>
+                                            <div class="name-product">
+                                                Sonora Wheat Croissant
+                                                <br>G2356
+                                            </div>
+                                            <div class="price">
+                                                Rs.80.00
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-count">
+                                        <form action="#" class="count-inlineflex">
+                                            <div class="qtyminus">-</div>
+                                            <input type="text" name="quantity" value="1" class="qty">
+                                            <div class="qtyplus">+</div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <div class="total">
+                                            $6,250.00
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" title="">
+                                            <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                        </a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://thecozycook.com/wp-content/uploads/2019/02/Cheddar-Bay-Biscuits-1.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    White Cheddar Biscuits
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    $1,250.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://assets.epicurious.com/photos/59233d784bc0fc506addbe80/1:1/w_2560%2Cc_limit/morning-buns-BA-052217.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Morning Bun
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.50.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://brokenovenbaking.com/wp-content/uploads/2022/08/almond-coffee-cake-16-1-500x375.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Almond Coffee Cake
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.150.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://fussfreeflavours.com/wp-content/uploads/2019/11/Vegan-tea-bread-featured.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Vegan Spiced Tea Cake
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.120.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BPxO98dRDYDKrYZ_gOZ7jim4D_6gOL4xPw&usqp=CAU"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Solidarity Loaf
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.100.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://static.toiimg.com/photo/76626147.cms"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Focaccia Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.250.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://sallysbakingaddiction.com/wp-content/uploads/2022/05/olive-bread-2.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                   Black Olive Boule
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.250.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/fruit-and-nut-loaf-cake-467759.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Fruit & Nut Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.180.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://www.sourdoughandolives.com/wp-content/uploads/2018/01/Sourdough-rye-bread4.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Rye Sourdough Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.200.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/fruit-and-nut-loaf-cake-467759.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Fruit & Nut Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.180.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/fruit-and-nut-loaf-cake-467759.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Fruit & Nut Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.180.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/fruit-and-nut-loaf-cake-467759.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Fruit & Nut Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.180.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <div class="display-flex align-center">
+                                                <div class="img-product">
+                                                    <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/fruit-and-nut-loaf-cake-467759.jpg"
+                                                        alt="" class="mCS_img_loaded">
+                                                </div>
+                                                <div class="name-product">
+                                                    Fruit & Nut Bread
+                                                    <br>G2356
+                                                </div>
+                                                <div class="price">
+                                                    Rs.180.00
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-count">
+                                            <form action="#" class="count-inlineflex">
+                                                <div class="qtyminus">-</div>
+                                                <input type="text" name="quantity" value="1" class="qty">
+                                                <div class="qtyplus">+</div>
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <div class="total">
+                                                $6,250.00
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" title="">
+                                                <img src="images/icons/delete.png" alt="" class="mCS_img_loaded">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="coupon-box">
+                                <form action="#" method="get" accept-charset="utf-8">
+                                    <div class="coupon-input">
+                                        <input type="text" name="coupon code" placeholder="Coupon Code">
+                                        <button type="submit" class="round-black-btn">Apply Coupon</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.table-cart -->
+                    </div>
+                    <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="cart-totals">
+                            <h3>Cart Totals</h3>
+                            <form action="#" method="get" accept-charset="utf-8">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td class="subtotal">$2,589.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td class="free-shipping">Free Shipping</td>
+                                        </tr>
+                                        <tr class="total-row">
+                                            <td>Total</td>
+                                            <td class="price-total">$1,591.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn-cart-totals">
+                                    <a href="#" class="update round-black-btn" title="">Update Cart</a>
+                                    <a href="#" class="checkout round-black-btn" title="">Proceed to Checkout</a>
+                                </div>
+                                <!-- /.btn-cart-totals -->
+                            </form>
+                            <!-- /form -->
+                        </div>
+                        <!-- /.cart-totals -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                        <div class="logo-widget footer-widget">
+                            <figure class="logo-box"><a href="#"><img src="CoffeeHouse-logos_white.png" alt=""></a>
+                            </figure>
+                            <div class="text">
+                                <p>At Coffee House,they continue their dedication to handmade food with artesian breads
+                                    and pastries made daily with locally-sourced,hairloom grains,as well as produce
+                                    forward day-time menu.</p>
+                            </div>
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
+                        <div class="service-widget footer-widget">
+                            <div class="footer-title">Services</div>
+                            <ul class="list">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Order Online</a></li>
+                                <li><a href="#">Food Serving</a></li>
+                                <li><a href="#">Catering</a></li>
+                                <li><a href="#">View Menu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+                        <div class="contact-widget footer-widget">
+                            <div class="footer-title">Contacts</div>
+                            <div class="text">
+                                <h6>Address:</h6>
+                                <p>15.Bankim Chatterjee Street,Near Presidency College,College Street,Kolkata(Calcutta)
+                                    India</p>
+
+                                <p>+2(784) 1223323</p>
+                                <h6>E-mail</h6>
+                                <p>coffeehouse@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main-footer end -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                    <div class="copyright"><a href="#">Coffee House</a> &copy; 2022. All Right Reserved</div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 column">
+                    <ul class="footer-nav">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    <script src="projecct1.js"></script>
+</body>
+
+</html>
